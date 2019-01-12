@@ -1,5 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Page from 'components/Page';
+import { Normalize } from 'styled-normalize';
+import BaseStyles from 'support/BaseStyles';
+import App from 'views/index';
 
-render(<Page />, document.getElementById('root'));
+const root = document.getElementById('root');
+if (root) {
+    render(
+        <React.Fragment>
+            <Normalize />
+            <BaseStyles />
+            <App />
+        </React.Fragment>,
+        root // eslint-disable-line
+    );
+}
