@@ -7,6 +7,7 @@ const baseStyles = createGlobalStyle`
         height: 100%;
         position: relative;
         font-size: 14px;
+        font-family: Staatliches;
         color: ${colors.TEXT};
     }
 
