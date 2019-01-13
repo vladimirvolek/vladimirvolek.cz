@@ -42,8 +42,15 @@ const Link = styled.a`
         font-size: 3rem;
     }
 
+    @media (max-width: 300px) {
+        font-size: 5rem;
+        width: 20px;
+        overflow: hidden;
+    }
+
     @media (max-width: 660px) {
-        font-size: 2rem;
+        width: 70px;
+        overflow: hidden;
     }
 `;
 
