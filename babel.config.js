@@ -1,12 +1,16 @@
-module.exports = {
-    presets: [
-        '@babel/preset-env',
-        '@babel/preset-react',
-    ],
-    plugins: [
-        'react-hot-loader/babel',
-        ['module-resolver', {
-            root: ['./src'],
-        }],
-    ],
+module.exports = api => {
+    api.cache(true);
+    return {
+        presets: ['next/babel', '@zeit/next-typescript/babel'],
+        plugins: [
+            [
+                'styled-components',
+                {
+                    ssr: true,
+                    displayName: true,
+                    preprocess: false,
+                },
+            ],
+        ],
+    };
 };

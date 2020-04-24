@@ -1,7 +1,7 @@
-public
+.next
+node_modules
+generated
+typegen.ts
+files
 build
 coverage
-node_modules
-src/flowtype/npm
-scripts/solidity/.*
-**/_old/*

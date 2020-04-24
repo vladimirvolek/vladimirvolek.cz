@@ -1,1 +1,0 @@
-# vladimirvolek.cz
