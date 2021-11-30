@@ -1,6 +1,5 @@
 .DS_Store
 .next
-node_modules
 npm-debug.log
 web/bundles
 yarn-error.log
@@ -11,5 +10,10 @@ yarn-error.log
 files
 .vscode
 coverage
-
-.now
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
